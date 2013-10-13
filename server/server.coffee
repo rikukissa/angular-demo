@@ -6,16 +6,19 @@ app.configure ->
 
 app.get '/api/images', (req, res) ->
   res.send [
+      id: 1
       title: 'This is a ship-shipping ship, shipping shipping ships',
       src: '/images/ship.png'
       user:
         username: 'Juhis'
     ,
+      id: 2
       title: 'Cant afford pizza?',
       src: '/images/pizza.jpg'
       user:
         username: 'Jallu'
     ,
+      id: 3
       title: 'Great success!',
       src: '/images/success.jpg'
       user:
