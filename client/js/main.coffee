@@ -2,6 +2,7 @@ angular = require 'angular'
 ngRoute = require 'route'
 
 listController = require './controllers/list-controller.coffee'
+imageController = require './controllers/image-controller.coffee'
 
 module = angular.module 'main-app', ['ngRoute']
 
@@ -16,6 +17,9 @@ module.config ['$routeProvider', '$locationProvider', ($routeProvider, $location
     .when '/',
       templateUrl: '/partials/main/index.html'
       controller: listController
+    .when '/image/:id',
+      templateUrl: '/partials/image/index.html'
+      controller: imageController
     .when '/404',
       templateUrl: '/partials/not-found/index.html'
 
