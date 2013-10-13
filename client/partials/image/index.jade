@@ -1,1 +1,4 @@
-h1 {{ image.title }}
+h2.image-title {{ image.title }}
+.image-user {{ image.user.username }}
+img.image(ng-src='{{image.src}}')
+a(href='/') Back
