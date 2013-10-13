@@ -11,18 +11,30 @@ images = [
     src: '/images/ship.png'
     user:
       username: 'Juhis'
+    comments: [
+        user: 'Hannu',
+        body: 'haha'
+    ]
   ,
     id: 2
     title: 'Cant afford pizza?',
     src: '/images/pizza.jpg'
     user:
       username: 'Jallu'
+    comments: [
+        user: 'Hannu',
+        body: 'tosi hassu kuva'
+    ]
   ,
     id: 3
     title: 'Great success!',
     src: '/images/success.jpg'
     user:
       username: 'Hanna'
+    comments: [
+        user: 'Hannu',
+        body: ':D'
+    ]
 ]
 
 app.get '/api/images/:id', (req, res) ->

@@ -1,4 +1,9 @@
 h2.image-title {{ image.title }}
+
 .image-user {{ image.user.username }}
+
 img.image(ng-src='{{image.src}}')
+
+comment-box(model='image')
+
 a(href='/') Back

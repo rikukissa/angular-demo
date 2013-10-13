@@ -9,6 +9,8 @@ module = angular.module 'main-app', ['ngRoute']
 module.filter 'shorten', () -> (value) ->
   if value.length > 40 then value.substr(0, 40) + '...' else value
 
+module.directive 'commentBox', require('./directives/comment-box.coffee')
+
 module.config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
 
   $locationProvider.html5Mode true
