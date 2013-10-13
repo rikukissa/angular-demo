@@ -1,1 +1,8 @@
-h1 Welcome
+h1.view-title Submitted images
+
+ul.image-list
+  li.image-item(ng-repeat='image in images')
+    img.image-item-thumbnail(ng-src='{{image.src}}')
+    .image-item-details
+      h3.image-item-title {{ image.title }}
+      strong.image-item-user {{ image.user.username }}
