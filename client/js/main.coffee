@@ -1,9 +1,12 @@
 angular = require 'angular'
 ngRoute = require 'route'
 
+listController = require './controllers/list-controller.coffee'
+
 module = angular.module 'main-app', ['ngRoute']
 
-listController = require './controllers/list-controller.coffee'
+module.filter 'shorten', () -> (value) ->
+  if value.length > 40 then value.substr(0, 40) + '...' else value
 
 module.config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
 
@@ -19,3 +22,4 @@ module.config ['$routeProvider', '$locationProvider', ($routeProvider, $location
     .otherwise
       redirectTo: '/404'
 ]
+
