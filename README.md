@@ -1,4 +1,11 @@
-# Project template for James.js and Browserify
+# AngularJS demo app
+Use tags to navigate through creation process
+#### v0.1
+Views, Routing
+#### v0.2
+Controllers, ngRepeat, Scope
+#### v0.3
+Fetching data with $http, Filters
 
 ## Getting started
     git clone git@github.com:rikukissa/james-browserify-project-template.git
