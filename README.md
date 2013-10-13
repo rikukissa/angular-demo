@@ -8,6 +8,8 @@ Controllers, ngRepeat, Scope
 Fetching data with $http, Filters
 #### v0.4
 Separate view for item in collection
+#### v0.5
+Directives
 
 ## Getting started
     git clone git@github.com:rikukissa/james-browserify-project-template.git
